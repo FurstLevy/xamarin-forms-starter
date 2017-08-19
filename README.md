@@ -22,7 +22,9 @@ branch com exemplo de salvar informações no cache da aplicação. Mesmo o usu�
 
 # geolocalizacao
 branch com exemplo do uso da geolocalização do disposivito. Nesse exemplo mostro como obter o endereço a partir da localização do dispositivo e como digitar um endereço em uma caixa de texto e o sistema buscar os possíveis endereços que o usuário quis dizer.
-## requisitos dessa branch:
+```
+requisitos dessa branch:
+
 1. instalar o pacote (em todos os projetos portable, droid e ios) Xam.Plugin.Geolocator (https://www.nuget.org/packages/Xam.Plugin.Geolocator/). Nesse exemplo estou utilizando a versão 4.0.1.
 2. no arquivo manifesto do android, colocar as permissões: ACCESS_COARSE_LOCATION e ACCESS_FINE_LOCATION
 3. ao adicionar essas permissões, o Google Play irá filtrar automaticamente dispositivos sem hardware específico. Você pode contornar isso adicionando o seguinte ao seu arquivo AssemblyInfo.cs no seu projeto Android:
@@ -42,4 +44,4 @@ branch com exemplo do uso da geolocalização do disposivito. Nesse exemplo most
 <key>RequestWhenInUseAuthorization</key>
 
 <string>É preciso utilizar a geolocalização.</string>
-
+```
