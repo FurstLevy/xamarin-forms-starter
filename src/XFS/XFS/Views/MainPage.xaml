@@ -4,8 +4,17 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="XFS.Views.MainPage"
-             Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
-  </StackLayout>
+             Title="geolocalização">
+    <StackLayout VerticalOptions="Center">
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Utilizar GPS" Command="{Binding UsarGpsCommand}"/>
+            <Label Text="{Binding EnderecoGPS}"/>
+        </StackLayout>
+        <StackLayout Margin="0,30,0,0">
+            <Label Text="digitar endereço manual"/>
+            <Entry Text="{Binding EnderecoManual}" />
+            <Button Text="Buscar localizações" Command="{Binding BuscarLocalizacoesCommand}"/>
+            <Label Text="{Binding EnderecoManualSelecionado}"/>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>
