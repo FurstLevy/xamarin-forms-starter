@@ -25,9 +25,10 @@ branch com exemplo do uso da geolocalização do disposivito. Nesse exemplo most
 ```
 requisitos dessa branch:
 
-1. instalar o pacote (em todos os projetos portable, droid e ios) Xam.Plugin.Geolocator (https://www.nuget.org/packages/Xam.Plugin.Geolocator/). Nesse exemplo estou utilizando a versão 4.0.1.
-2. no arquivo manifesto do android, colocar as permissões: ACCESS_COARSE_LOCATION e ACCESS_FINE_LOCATION
-3. ao adicionar essas permissões, o Google Play irá filtrar automaticamente dispositivos sem hardware específico. Você pode contornar isso adicionando o seguinte ao seu arquivo AssemblyInfo.cs no seu projeto Android:
+1. instalar o pacote (em todos os projetos portable, droid e ios) Xamarin.Forms.Maps (https://www.nuget.org/packages/Xamarin.Forms.Maps/). Nesse exemplo estou utilizando a versão 2.3.4.267
+2. instalar o pacote (em todos os projetos portable, droid e ios) Xam.Plugin.Geolocator (https://www.nuget.org/packages/Xam.Plugin.Geolocator/). Nesse exemplo estou utilizando a versão 4.0.1.
+3. no arquivo manifesto do android, colocar as permissões: ACCESS_COARSE_LOCATION e ACCESS_FINE_LOCATION
+4. ao adicionar essas permissões, o Google Play irá filtrar automaticamente dispositivos sem hardware específico. Você pode contornar isso adicionando o seguinte ao seu arquivo AssemblyInfo.cs no seu projeto Android:
 
 [assembly: UsesFeature("android.hardware.location", Required = false)]
 
@@ -35,7 +36,7 @@ requisitos dessa branch:
 
 [assembly: UsesFeature("android.hardware.location.network", Required = false)]
 
-4. no projeto IOS é preciso das permissões NSLocationAlwaysUsageDescription e RequestWhenInUseAuthorization. Abra o arquivo Info.plist do seu projeto IOS e dentro da tag <dict> colocar as tags:
+5. no projeto IOS é preciso das permissões NSLocationAlwaysUsageDescription e RequestWhenInUseAuthorization. Abra o arquivo Info.plist do seu projeto IOS e dentro da tag <dict> colocar as tags:
 
 <key>NSLocationAlwaysUsageDescription</key>
 
