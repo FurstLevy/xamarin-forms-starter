@@ -3,9 +3,13 @@ projeto exemplo em xamarin forms com prism
 
 nesse projeto vou utilizar o Visual Studio 2017
 
-a branch master será uma primeira versão com uma única alteração que é a implementação do INavigationService e BindableBase que implementa a INotifyPropertyChanged, pois basicamente todas as telas terão efeito sobre essas bibliotecas para funcionarem corretamente
-
 vou separar as funcionalidades por branchs
+
+# master
+será uma primeira versão com uma única alteração que é a implementação do INavigationService e BindableBase que implementa a INotifyPropertyChanged, pois basicamente todas as telas terão efeito sobre essas bibliotecas para funcionarem corretamente
+
+# properties-cache
+branch com exemplo de salvar informações no cache da aplicação. Mesmo o usuário encerrando a aplicação ou reiniciando o celular, o valor continuar salvo.
 
 # requisitos
 1. instalar o Visual Studio 2017 (com os pacotes do Xamarin)
