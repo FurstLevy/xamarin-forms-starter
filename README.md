@@ -1,6 +1,11 @@
 # xamarin-forms-starter
 projeto exemplo em xamarin forms com prism
+
 nesse projeto vou utilizar o Visual Studio 2017
+
+a branch master será uma primeira versão sem alterações, apenas o projeto base
+
+vou separar as funcionalidades por branchs
 
 # requisitos
 1. instalar o Visual Studio 2017 (com os pacotes do Xamarin)
