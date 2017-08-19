@@ -3,7 +3,7 @@ projeto exemplo em xamarin forms com prism
 
 nesse projeto vou utilizar o Visual Studio 2017
 
-a branch master será uma primeira versão sem alterações, apenas o projeto base
+a branch master será uma primeira versão com uma única alteração que é a implementação do INavigationService e BindableBase que implementa a INotifyPropertyChanged, pois basicamente todas as telas terão efeito sobre essas bibliotecas para funcionarem corretamente
 
 vou separar as funcionalidades por branchs
 
