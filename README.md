@@ -48,3 +48,27 @@ requisitos dessa branch:
 
 <string>É preciso utilizar a geolocalização.</string>
 ```
+
+
+# bonus
+para quem precisa consumir um serviço localhost e está passando por problemas, essa solução é a melhor que encontrei:
+
+> fonte: (Paulo Rogério) http://ilovecode.com.br/xamarin-como-consumir-uma-api-local-que-roda-no-iis-express-no-emulador/
+
+Vamos utilizar o gerenciador de pacotes NPM para instalar o iisexpress-proxy. Para isso iremos precisar de ter o Node.js instalado na máquina.
+
+Para baixar e instalar o Node.JS acesse https://nodejs.org/en/
+
+Após instalar o Node.Js é bem simples, basta instalar o pacote do iisexpress-proxy em nossa máquina.
+
+Para isso abra o prompt do Node.Js em sua máquina e digite.
+
+> npm install -g iisexpress-proxy
+
+Após instalar vamos dar o comando que vai substituir a porta do seu IIS Express para uma porta que o Emulador entenda.
+
+> iisexpress-proxy PortaDaApi to 3000
+
+Agora basta em nosso aplicativo mudar a url de nossa api, ficando assim http://192.168.0.102:3000/api/test/v1/online
+
+Funciona tanto em emulador quanto no device fisico.
